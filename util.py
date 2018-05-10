@@ -1,4 +1,6 @@
 import pandas as pd
+from sklearn.utils import check_array
+
 
 def series_to_supervised_df(data, n_in=1, n_out=1, dropnan=True):
     """
@@ -84,3 +86,13 @@ def inv_normalization(y, predict_hours):
         inv_ = scaler.inverse_transform(raw_)
         inv_y[:, i] = inv_[:, 0]
     return inv_y
+
+
+def mean_absolute_percentage_error(y_true, y_pred): 
+    # y_true, y_pred = check_array(y_true, y_pred)
+
+    ## Note: does not handle mix 1d representation
+    #if _is_1d(y_true): 
+    #    y_true, y_pred = _check_1d_array(y_true, y_pred)
+
+    return np.mean(np.abs((y_true - y_pred) / y_true)) * 1
