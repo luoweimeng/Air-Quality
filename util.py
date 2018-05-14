@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from sklearn.utils import check_array
 
 
@@ -72,7 +73,7 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 
 
 # inverse transform
-def inv_normalization(y, predict_hours):
+def inv_normalization(scaler, y, predict_hours):
     if len(y.shape) == 1:
         y = y[:, np.newaxis]
         print(y.shape)
