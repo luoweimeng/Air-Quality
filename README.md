@@ -1,8 +1,7 @@
 ## Air Quality Forecasting for Beijing
-* Data Preprocessing using Pandas
-* Model training using scikit-learn and Keras
-* Model visualization using matplotlib
+* Air Quality Forecasting for Beijing using RNN (LSTM), Seq2Seq, Attention-based RNN
+* Compare the results with ARIMA
 
-[Jupyter notebook](/preprocess.ipynb)
+[Jupyter notebook](/LSTM.ipynb)
 
 [Report](/RNN.pdf)
