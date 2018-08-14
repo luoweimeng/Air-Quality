@@ -4,3 +4,5 @@
 * Model visualization using matplotlib
 
 [Jupyter notebook](/preprocess.ipynb)
+
+[Report](/RNN.pdf)
